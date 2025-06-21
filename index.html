@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ចូល Telegram Channel</title>
 
-  <!-- ✅ Meta Pixel Code -->
+  <!-- ✅ Correct Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,14 +16,13 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
 
-  fbq('init', '582057058296404');  // ✅ Correct Pixel ID
+  fbq('init', '582057058296404');  // ✅ Dataset ID (Pixel ID)
   fbq('track', 'PageView');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=582057058296404&ev=PageView&noscript=1"/>
   </noscript>
-  <!-- ✅ End Meta Pixel Code -->
 
   <style>
     body {
@@ -39,18 +38,18 @@
       font-size: 18px;
       color: #4b5563;
     }
-    a.btn {
-      display: inline-block;
+    button {
       margin-top: 30px;
       background: #0088cc;
       color: white;
       font-size: 18px;
       padding: 14px 28px;
+      border: none;
       border-radius: 10px;
-      text-decoration: none;
+      cursor: pointer;
       transition: background 0.3s ease;
     }
-    a.btn:hover {
+    button:hover {
       background: #006699;
     }
   </style>
@@ -60,9 +59,9 @@
   <h1>📢 សូមស្វាគមន៍!</h1>
   <p>ចុចប៊ូតុងខាងក្រោម ដើម្បីចូល Telegram Channel របស់យើង</p>
 
-  <a href="https://t.me/sportkh2888" class="btn" onclick="fbq('track', 'JoinTelegram')">
+  <button id="joinTelegram" onclick="fbq('track', 'JoinTelegram'); window.location.href='https://t.me/sportkh2888';">
     ចូល Telegram
-  </a>
+  </button>
 
 </body>
 </html>
