@@ -27,30 +27,30 @@
 
   <style>
     body {
-      background: #f1f5f9;
+      background: #f9fafb;
       font-family: 'Arial', sans-serif;
       text-align: center;
       padding: 60px 20px;
     }
     h1 {
-      color: #1e293b;
+      color: #1f2937;
     }
     p {
       font-size: 18px;
-      color: #334155;
+      color: #4b5563;
     }
-    .btn {
-      display: inline-block;
+    button {
       margin-top: 30px;
       background: #0088cc;
       color: white;
       font-size: 18px;
       padding: 14px 28px;
+      border: none;
       border-radius: 10px;
-      text-decoration: none;
+      cursor: pointer;
       transition: background 0.3s ease;
     }
-    .btn:hover {
+    button:hover {
       background: #006699;
     }
   </style>
@@ -58,15 +58,12 @@
 <body>
 
   <h1>📢 សូមស្វាគមន៍!</h1>
-  <p>ចុចខាងក្រោម ដើម្បីចូល Telegram Channel របស់យើង</p>
+  <p>ចុចប៊ូតុងខាងក្រោម ដើម្បីចូល Telegram Channel របស់យើង</p>
 
-  <a href="#" class="btn" onclick="trackAndRedirect(event)">
-    ចូល Telegram
-  </a>
+  <button onclick="trackAndRedirect()">ចូល Telegram</button>
 
   <script>
-    function trackAndRedirect(e) {
-      e.preventDefault();
+    function trackAndRedirect() {
       fbq('track', 'JoinTelegram');
       setTimeout(function () {
         window.location.href = "https://t.me/sportkh2888";
