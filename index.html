@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ចូល Telegram Channel</title>
+
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '582057058296404');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=582057058296404&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ✅ End Meta Pixel Code -->
+
+  <style>
+    body {
+      background: #f1f5f9;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      color: #1e293b;
+    }
+    p {
+      font-size: 18px;
+      color: #334155;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #0088cc;
+      color: white;
+      font-size: 18px;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #006699;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📢 សូមស្វាគមន៍!</h1>
+  <p>ចុចខាងក្រោម ដើម្បីចូល Telegram Channel របស់យើង</p>
+
+  <a href="#" class="btn" onclick="trackAndRedirect(event)">
+    ចូល Telegram
+  </a>
+
+  <script>
+    function trackAndRedirect(e) {
+      e.preventDefault();
+      fbq('track', 'JoinTelegram');
+      setTimeout(function () {
+        window.location.href = "https://t.me/YOUR_CHANNEL";
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>
